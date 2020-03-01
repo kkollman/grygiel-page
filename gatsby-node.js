@@ -5,3 +5,13 @@
  */
 
 // You can delete this file if you're not using it
+var path = require('path');
+
+// eslint-disable-next-line no-unused-vars
+exports.onCreateWebpackConfig = ({ stage, actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    },
+  });
+};

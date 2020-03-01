@@ -5,21 +5,42 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "classnames": "^2.2.6",
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",
     "gatsby-plugin-manifest": "^2.2.39",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-sass": "^2.1.28",
     "gatsby-plugin-sharp": "^2.4.3",
     "gatsby-source-filesystem": "^2.1.46",
     "gatsby-transformer-sharp": "^2.3.13",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-burger-menu": "^2.6.13",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-scroll": "^1.7.16",
+    "react-scroll-parallax": "^2.3.1"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-prettier-standard": "^2.0.0",
+    "eslint-config-react-app": "^5.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-import-resolver-alias": "^1.1.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
+    "prettier": "^1.19.1",
+    "prettier-standard": "^9.1.1"
   },
   "keywords": [
     "gatsby"
