@@ -1,0 +1,33 @@
+@import 'src/styles/typography';
+@import 'src/styles/colors';
+@import 'src/styles/variables';
+@import 'src/styles/layers';
+
+$middle-text-color: white;
+$middle-background: url('../../images/wall_blue.jpg');
+
+.middle {
+  background: $indigo-gradient;
+  background-image: $middle-background;
+  background-attachment: fixed;
+  background-blend-mode: lighten;
+  background-size: cover;
+  color: $middle-text-color;
+  position: relative;
+  overflow: hidden;
+  padding: 3em 0;
+}
+
+.smallCube {
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
+
+.largeCube {
+  position: absolute;
+  right: -243px;
+  top: 3em;
+  z-index: 0;
+  opacity: 0.6;
+}

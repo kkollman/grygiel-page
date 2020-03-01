@@ -1,0 +1,100 @@
+@import 'src/styles/typography';
+@import 'src/styles/colors';
+@import 'src/styles/variables';
+@import 'src/styles/layers';
+
+$navbar-text-color: $white;
+$navbar-background: $transparent;
+
+.navbar {
+  @extend %font-size-normal;
+
+  height: em(64);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: $top-most-layer;
+}
+
+.navElements {
+  display: flex;
+  align-items: center;
+}
+
+.element {
+  text-decoration: none;
+  cursor: pointer;
+  color: $navbar-text-color;
+  font-weight: $bolder;
+  transition: transform $transition-time-quick;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  & + & {
+    margin-left: 1em;
+  }
+}
+
+.hamburger {
+  @extend %font-size-accent;
+
+  cursor: pointer;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 28px;
+  justify-content: space-between;
+  z-index: $top-most-layer;
+  transition: all $transition-time-quick;
+}
+
+.hamburgerStripe {
+  height: 4px;
+  width: 29px;
+  background-color: $navbar-text-color;
+  border-radius: 2px;
+  transition: all $transition-time-quick;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  background: rgba($black, 0.9);
+  width: em(240px);
+  padding: 3.5em 1em;
+  transition: all $transition-time-smooth;
+  opacity: 0;
+
+  .element {
+    margin: 1em 0 0;
+  }
+}
+
+
+.isOpen {
+  .stripeOne {
+    transform: translateY(12px) rotate(45deg);
+  }
+
+  .stripeTwo {
+    width: 0;
+  }
+
+  .stripeThree {
+    transform: translateY(-12px) rotate(-45deg);
+  }
+
+  .mobileMenu {
+    opacity: 1;
+    right: 0;
+  }
+}

@@ -1,0 +1,17 @@
+@import 'src/styles/typography';
+@import 'src/styles/colors';
+@import 'src/styles/variables';
+@import 'src/styles/layers';
+
+$story-text-color: white;
+$story-background: red;
+
+.story {
+  @extend %font-size-normal;
+
+  font-family: $secondary-font-name;
+  margin: 0;
+  max-width: em(680, 19);
+  line-height: 1.5em;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.52);
+}

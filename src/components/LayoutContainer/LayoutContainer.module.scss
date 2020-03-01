@@ -1,0 +1,17 @@
+@import 'src/styles/typography';
+@import 'src/styles/colors';
+@import 'src/styles/variables';
+@import 'src/styles/layers';
+
+
+.layout-container {
+  @extend %font-size-normal;
+
+  margin: 0 auto;
+  width: 100%;
+  max-width: em(1140px);
+
+  @include mobile {
+    padding: 0 3em;
+  }
+}

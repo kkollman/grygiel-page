@@ -1,0 +1,80 @@
+@import 'src/styles/typography';
+@import 'src/styles/colors';
+@import 'src/styles/variables';
+@import 'src/styles/layers';
+
+$hero-text-color: white;
+$hero-background: red;
+
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  //background: $indigo-gradient;
+  display: flex;
+
+  @include tablet {
+    flex-flow: column;
+  }
+}
+
+.heroImage {
+  opacity: 0.4;
+  height: 100%;
+}
+
+.heroTitle {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.header {
+  z-index: $top-layer;
+  position: relative;
+
+  h1 {
+    font-size: 88px;
+    font-family: $primary-font-name;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-family: $secondary-font-name;
+    font-weight: 400;
+  }
+}
+
+.heroLogo {
+  z-index: $top-most-layer;
+}
+
+.heroSide {
+  position: relative;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bay-of-many;
+
+  @include tablet {
+    flex: 1;
+    width: 100%;
+  }
+}
+
+.wall {
+  opacity: 0.2;
+}

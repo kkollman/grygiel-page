@@ -1,0 +1,12 @@
+@import 'src/styles/typography';
+@import 'src/styles/colors';
+@import 'src/styles/variables';
+@import 'src/styles/layers';
+
+
+.heading {
+  @extend %font-size-huge;
+
+  font-family: $primary-font-name;
+  font-weight: 800;
+}

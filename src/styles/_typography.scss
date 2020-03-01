@@ -1,0 +1,244 @@
+@import 'src/styles/responsive';
+@import 'src/styles/functions/px-to-rem';
+
+////////////////////////
+// GLOBAL-FONT-NAMES  //
+////////////////////////
+
+$primary-font-name: 'acumin-pro-wide', 'sans-serif';
+$secondary-font-name: 'museo-slab', 'serif';
+
+///////////////////
+// SIZES - WIDE  //
+///////////////////
+
+$huge-wide: pxtorem(48px);
+$large-wide: pxtorem(32px);
+$bigger-wide: pxtorem(28px);
+$big-wide: pxtorem(24px);
+$medium-wide: pxtorem(19px);
+$accent-wide: pxtorem(18px);
+$normal-wide: pxtorem(16px);
+$copy-wide: pxtorem(14px);
+$small-wide: pxtorem(12px);
+$tiny-wide: pxtorem(10px);
+
+//////////////////////
+// SIZES - DESKTOP  //
+//////////////////////
+
+$huge-desktop: pxtorem(48px);
+$large-desktop: pxtorem(32px);
+$bigger-desktop: pxtorem(28px);
+$big-desktop: pxtorem(24px);
+$medium-desktop: pxtorem(19px);
+$accent-desktop: pxtorem(18px);
+$normal-desktop: pxtorem(16px);
+$copy-desktop: pxtorem(14px);
+$small-desktop: pxtorem(12px);
+$tiny-desktop: pxtorem(10px);
+
+////////////////////
+// SIZES - TABLET //
+////////////////////
+
+$huge-tablet: pxtorem(34px);
+$large-tablet: pxtorem(30px);
+$bigger-tablet: pxtorem(18px);
+$big-tablet: pxtorem(22px);
+$medium-tablet: pxtorem(19px);
+$accent-tablet: pxtorem(16px);
+$normal-tablet: pxtorem(14px);
+$copy-tablet: pxtorem(13px);
+$small-tablet: pxtorem(11px);
+$tiny-tablet: pxtorem(10px);
+
+////////////////////
+// SIZES - MOBILE //
+////////////////////
+
+$huge-mobile: pxtorem(30px);
+$large-mobile: pxtorem(30px);
+$bigger-mobile: pxtorem(18px);
+$big-mobile: pxtorem(20px);
+$medium-mobile: pxtorem(16px);
+$accent-mobile: pxtorem(15px);
+$normal-mobile: pxtorem(14px);
+$copy-mobile: pxtorem(13px);
+$small-mobile: pxtorem(11px);
+$tiny-mobile: pxtorem(10px);
+
+/**
+ *  FONTS SIZES DEFINITIONS
+ */
+
+%font-size-huge {
+  font-size: $huge-wide;
+
+  @include desktop-small {
+    font-size: $huge-desktop;
+  }
+
+  @include mobile {
+    font-size: $huge-tablet;
+  }
+
+  @include mobile-small {
+    font-size: $huge-mobile;
+  }
+}
+
+%font-size-large {
+  font-size: $large-wide;
+
+  @include desktop-small {
+    font-size: $large-desktop;
+  }
+
+  @include mobile {
+    font-size: $large-tablet;
+  }
+
+  @include mobile-small {
+    font-size: $large-mobile;
+  }
+}
+
+%font-size-bigger {
+  font-size: $bigger-wide;
+
+  @include desktop-small {
+    font-size: $bigger-desktop;
+  }
+
+  @include mobile {
+    font-size: $bigger-tablet;
+  }
+
+  @include mobile-small {
+    font-size: $bigger-mobile;
+  }
+}
+
+%font-size-big {
+  font-size: $big-wide;
+
+  @include desktop-small {
+    font-size: $big-desktop;
+  }
+
+  @include mobile {
+    font-size: $big-tablet;
+  }
+
+  @include mobile-small {
+    font-size: $big-mobile;
+  }
+}
+
+%font-size-medium {
+  font-size: $medium-wide;
+
+  @include desktop-small {
+    font-size: $medium-desktop;
+  }
+
+  @include mobile {
+    font-size: $medium-tablet;
+  }
+
+  @include mobile-small {
+    font-size: $medium-mobile;
+  }
+}
+
+%font-size-normal {
+  font-size: $normal-wide;
+
+  @include desktop-small {
+    font-size: $normal-desktop;
+  }
+
+  @include mobile {
+    font-size: $normal-tablet;
+  }
+
+  @include mobile-small {
+    font-size: $normal-mobile;
+  }
+}
+
+%font-size-accent {
+  font-size: $accent-wide;
+
+  @include desktop-small {
+    font-size: $accent-desktop;
+  }
+
+  @include mobile {
+    font-size: $accent-tablet;
+  }
+
+  @include mobile-small {
+    font-size: $accent-mobile;
+  }
+}
+
+%font-size-copy {
+  font-size: $copy-wide;
+
+  @include desktop-small {
+    font-size: $copy-desktop;
+  }
+
+  @include mobile {
+    font-size: $copy-tablet;
+  }
+
+  @include mobile-small {
+    font-size: $copy-mobile;
+  }
+}
+
+%font-size-small {
+  font-size: $small-wide;
+
+  @include desktop-small {
+    font-size: $small-desktop;
+  }
+
+  @include mobile {
+    font-size: $small-tablet;
+  }
+
+  @include mobile-small {
+    font-size: $small-mobile;
+  }
+}
+
+%font-size-tiny {
+  font-size: $tiny-wide;
+
+  @include desktop-small {
+    font-size: $tiny-desktop;
+  }
+
+  @include mobile {
+    font-size: $tiny-tablet;
+  }
+
+  @include mobile-small {
+    font-size: $tiny-mobile;
+  }
+}
+
+//////////////////////
+// FONT - WEIGHTS  //
+//////////////////////
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 600;
+$bolder: 800;
+$heavy: 900;

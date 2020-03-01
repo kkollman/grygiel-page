@@ -1,0 +1,22 @@
+@import 'src/styles/typography';
+@import 'src/styles/colors';
+@import 'src/styles/variables';
+@import 'src/styles/layers';
+
+$examples-text-color: white;
+$examples-background: $black;
+
+.examples {
+  @extend %font-size-normal;
+  padding: em(100px) em(20px);
+  background: $examples-background;
+  color: $examples-text-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.exhibits {
+  padding-top: 3em;
+}

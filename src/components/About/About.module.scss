@@ -1,0 +1,18 @@
+@import 'src/styles/typography';
+@import 'src/styles/colors';
+@import 'src/styles/variables';
+@import 'src/styles/layers';
+
+
+.about {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  padding-top: em(150px);
+}
+
+.story {
+  flex: 1;
+}

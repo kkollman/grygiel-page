@@ -1,0 +1,17 @@
+@import 'src/styles/typography';
+@import 'src/styles/colors';
+@import 'src/styles/variables';
+@import 'src/styles/layers';
+
+.exhibit {
+  @extend %font-size-normal;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  height: em(200px);
+  width: em(750px);
+}

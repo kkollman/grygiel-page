@@ -1,0 +1,87 @@
+//responsivity is set up and designed in 'desktop first' manner
+
+@import 'src/styles/functions/decimal';
+
+//breakpoints
+$mobile-min-width: 480px;
+$tablet-min-width: 768px;
+$desktop-small-min-width: 1024px;
+$desktop-medium-min-width: 1240px;
+$desktop-min-width: 1440px;
+$desktop-large-min-width: 1920px;
+
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return decimal-round($pixels / $context, 2) * 1em;
+}
+
+// breakpoint mixins
+@mixin desktop-large {
+  @media (min-width: $desktop-large-min-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $desktop-large-min-width - 1) {
+    @content;
+  }
+}
+
+@mixin desktop-medium {
+  @media (max-width: $desktop-min-width - 1) {
+    @content;
+  }
+}
+
+@mixin desktop-small {
+  @media (max-width: $desktop-medium-min-width - 1) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $desktop-small-min-width - 1) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $tablet-min-width - 1) {
+    @content;
+  }
+}
+
+@mixin mobile-small {
+  @media (max-width: $mobile-min-width - 1) {
+    @content;
+  }
+}
+
+// Used mainly for adding eg hover effects only for desktop devices
+@mixin tablet-up {
+  @media (min-width: $desktop-small-min-width) {
+    @content;
+  }
+}
+
+@mixin mobile-up {
+  @media (min-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin small-mobile-up {
+  @media (min-width: $mobile-min-width) {
+    @content;
+  }
+}
