@@ -43,11 +43,11 @@ class Navbar extends React.Component {
     const mapElementsToLinks = elements => {
       return elements.map(element => {
         return (
-          <a className={styles.element}>
+          <span className={styles.element}>
             <Scroll smooth to={element.link}>
               {element.label}
             </Scroll>
-          </a>
+          </span>
         );
       });
     };

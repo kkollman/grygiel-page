@@ -12,6 +12,10 @@
   align-items: center;
   padding-top: 150px;
   padding-bottom: em(50px);
+
+  @include mobile {
+    padding-top: 2em;
+  }
 }
 
 .story {
